@@ -45,6 +45,13 @@ main {
     border-radius: 50%;
 }
 
+/* apply this to content taken from home.md */
+.intro > .markdown {
+    margin-top: 50px;
+    font-size: 150%;
+    /*text-align: justify;*/
+}
+
 /*apply accent colour to links*/
 
 a:link, a:visited {
