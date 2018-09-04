@@ -18,7 +18,9 @@ ignoreFiles = ["\\.Rmd$", "\\.Rmarkdown$", "public/"]
     githubUsername = "nathancday"
     accent = "#386890" # dark colors do best
     backgroundColor = "#f5f5f5"
-    font = "Mina" # should match the name on Google Fonts!
+    # font names should match the name on Google Fonts!
+    font = "Mina"
+    font_code = "Inconsolata" # should match the name on Google Fonts!
     highlight = true
     highlightStyle = "lakeside-light" # make this match accent
     highlightLanguages = ["r", "bash", "go"]
