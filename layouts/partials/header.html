@@ -87,7 +87,8 @@
                     {{ if .Site.Menus.icon }}
                         <ul class="nav navbar-nav navbar-right">
                             {{ range sort .Site.Menus.icon }}
-                                <li class="navbar-icon"><a href="{{ .URL }}"><i class="fa fa-{{ .Name }}"></i></a></li>
+                                {{ $fontawesome_collection := .Pre | default "fab"}}
+                                <li class="navbar-icon"><a href="{{ .URL }}"><i class="{{ $fontawesome_collection}} fa-{{ .Name }}"></i></a></li>                            
                             {{ end }}
                             {{ partial "toggle"}}
                         </ul>
